@@ -28,9 +28,10 @@ namespace CylinderAllisonC
         {
             //declare variable
             double area;
+            const double PI = 3.14;
 
             //calculate the area
-            area = 2 * Math.Pow(radius, 2) * height;
+            area = 2 * PI * Math.Pow(radius, 2) * height;
 
             //return the area value
             return area;
