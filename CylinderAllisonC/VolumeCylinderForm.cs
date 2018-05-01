@@ -29,6 +29,9 @@ namespace CylinderAllisonC
             //declare variable
             double area;
 
+            //calculate the area
+            area = 2 * Math.Pow(radius, 2) * height;
+
             //return the area value
             return area;
         }
@@ -36,7 +39,17 @@ namespace CylinderAllisonC
         private void btnCalculate_Click(object sender, EventArgs e)
         {
             //delare variables
+            double radius, height, area;
 
+            //getting the input
+            radius = float.Parse(txtRadius.Text);
+            height = float.Parse(txtHeight.Text);
+
+            //calling the calculate function to set ot area
+            area = CalculateVolume(height, radius);
+
+            //display the area
+            MessageBox.Show("The area is " + area, "Volume of a Cylinder");
         }
     }
 }
