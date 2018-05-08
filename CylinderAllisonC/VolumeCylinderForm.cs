@@ -24,17 +24,17 @@ namespace CylinderAllisonC
             InitializeComponent();
         }
 
-        private double CalculateVolume (double height, double radius)
+        private double CalculateVolume (double tmpheight, double tmpradius)
         {
             //declare variable
-            double volume;
+            double tmpvolume;
             const double PI = 3.14;
 
             //calculate the area
-            volume = 2 * PI * Math.Pow(radius, 2) * height;
+            tmpvolume = 2 * PI * Math.Pow(tmpradius, 2) * tmpheight;
 
             //return the area value
-            return volume;
+            return tmpvolume;
         }
 
         private void btnCalculate_Click(object sender, EventArgs e)
