@@ -27,14 +27,14 @@ namespace CylinderAllisonC
         private double CalculateVolume (double height, double radius)
         {
             //declare variable
-            double area;
+            double volume;
             const double PI = 3.14;
 
             //calculate the area
-            area = 2 * PI * Math.Pow(radius, 2) * height;
+            volume = 2 * PI * Math.Pow(radius, 2) * height;
 
             //return the area value
-            return area;
+            return volume;
         }
 
         private void btnCalculate_Click(object sender, EventArgs e)
@@ -50,7 +50,7 @@ namespace CylinderAllisonC
             area = CalculateVolume(height, radius);
 
             //display the area
-            MessageBox.Show("The area is " + area, "Volume of a Cylinder");
+            MessageBox.Show("The volume is " + volume, "Volume of a Cylinder");
         }
     }
 }
