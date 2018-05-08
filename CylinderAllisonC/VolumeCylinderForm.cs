@@ -40,14 +40,14 @@ namespace CylinderAllisonC
         private void btnCalculate_Click(object sender, EventArgs e)
         {
             //delare variables
-            double radius, height, area;
+            double radius, height, volume;
 
             //getting the input
             radius = float.Parse(txtRadius.Text);
             height = float.Parse(txtHeight.Text);
 
             //calling the calculate function to set ot area
-            area = CalculateVolume(height, radius);
+            volume = CalculateVolume(height, radius);
 
             //display the area
             MessageBox.Show("The volume is " + volume, "Volume of a Cylinder");
